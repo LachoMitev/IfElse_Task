@@ -1,0 +1,66 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void welcome();
+
+int printTask();
+
+int main() {
+
+	welcome();
+	
+	printTask();
+	
+}
+
+void welcome() {
+
+	cout << "What operation, do you want to use? " << endl;
+}
+
+
+
+int printTask() {
+	
+	int a;
+	int b;
+	int result;
+
+	string operation;
+	
+	cin >> operation;
+	cin >> a;
+	cin >> b;
+
+	if (operation == "sum") {
+
+		result = a + b;
+		cout << result << endl;
+	}
+
+	else if (operation == "subtract") {
+
+		result = a - b;
+
+		cout << result << endl;
+	}
+	else if (operation == "multiply") {
+
+		result = a * b;
+
+		cout << result << endl;
+	}
+
+	else if (operation == "divide") {
+
+		result = a / b;
+
+		cout << result << endl;
+	}
+
+
+	return result;
+}
+
