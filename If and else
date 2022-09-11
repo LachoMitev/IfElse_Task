@@ -20,13 +20,11 @@ void welcome() {
 	cout << "What operation, do you want to use? " << endl;
 }
 
-
-
 int printTask() {
 	
-	int a;
-	int b;
-	int result;
+	double a;
+	double b;
+	double result;
 
 	string operation;
 	
@@ -57,9 +55,8 @@ int printTask() {
 
 		result = a / b;
 
-		cout << result << endl;
+		cout << result <<  endl;
 	}
-
 
 	return result;
 }
